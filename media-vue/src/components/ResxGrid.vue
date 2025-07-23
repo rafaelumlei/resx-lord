@@ -61,15 +61,10 @@ export default defineComponent({
 		}
 	},
 	setup(props) {
-
 		const VIEW_SIZE = 50;
 		const resxService = new ResxHandler();
-		const entries = ref<ResxEntry[]>(
-			props.resources.length ? 
-			props.resources.map(r => ({...r, oldKey: r.key })) : 
-			resxService.getEntries()
-		);
-		const languages = ref<string[]>(resxService.getLanguages());
+		const entries = ref<ResxEntry[]>(props.resources.map(r => ({...r, oldKey: r.key })));
+		const languages = ref<string[]>(Object.keys(entries.value?.[0].values).sort());
 		const filteredEntries = ref<ResxEntry[]>([]);
 		const searchModel = ref<ResxEntry>({ key: '', values: {} });
 		const viewIdCounter = ref<number>(Date.now());
@@ -84,7 +79,6 @@ export default defineComponent({
 		// TODO: nice to have - implement scroll (i.e. load more)
 		filteredEntries.value = entries.value.slice(0, 300);
 
-		// Add entry from search box
 		const addEntry = () => {
 			if (!addEnabled) return;
 

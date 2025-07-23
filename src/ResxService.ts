@@ -109,8 +109,13 @@ export class ResxService {
 
 	public updateKey(oldKey: string, newKey: string) {
 		this.filesByLang.forEach((f: ResxFile) => {
-			f.content.root.data.find(d => d['@_name'] === oldKey)!['@_name'] = newKey;
-			this.saveFile(f);
+			const data = f.content.root.data.find(d => d['@_name'] === oldKey);
+
+			// if a key exists only in some files
+			if (data) {
+				data['@_name'] = newKey;
+				this.saveFile(f);
+			}
 		});
 	}
 
