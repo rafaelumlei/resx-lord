@@ -1,71 +1,71 @@
-# resx-lord README
+# RESX Lord
 
-This is the README for your extension "resx-lord". After writing up a brief description, we recommend including the following sections.
+**Blazing fast RESX manager** - A high-performance VS Code extension for managing .NET resource files with an intuitive grid-based editor.
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+RESX Lord revolutionizes how you work with .NET resource files by providing:
 
-For example if there is an image subfolder under your extension project workspace:
+### 🚀 **Super Performant Loading**
+- Lightning-fast parsing and rendering of resource files
+- Efficiently handles large resource files with thousands of entries
+- Optimized Vue.js-based webview interface
 
-\!\[feature X\]\(images/feature-x.png\)
+### 🌐 **Multi-Language Overview**
+- Automatically discovers and loads all resource files with the same base name
+- Side-by-side view of all language variants (e.g., `app.resx`, `app.en.resx`, `app.fr.resx`)
+- Unified grid interface showing all translations in one place
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### ✏️ **Intuitive Editing**
+- Edit resource keys and values directly in a spreadsheet-like grid
+- Add new resource keys across all languages simultaneously
+- Real-time search and filtering capabilities
 
-## Requirements
+### 🔍 **Smart Search & Filter**
+- Search across resource keys and values
+- Filter by specific languages or content
+- Instant results as you type
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### 💾 **Seamless Integration**
+- Works as a custom editor for `.resx` files
+- Preserves original file formatting and structure
+- Auto-saves changes back to individual resource files
 
-## Extension Settings
+## Getting Started
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+1. Install the RESX Lord extension
+2. Open any `.resx` file in your workspace
+3. The custom grid editor will automatically open, showing all related language files
+4. Start editing your resources with the intuitive interface!
 
-For example:
+## Performance
 
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
+RESX Lord is built for performance:
+- **Fast XML parsing** using optimized libraries
+- **Efficient rendering** with Vue.js virtual DOM
+- **Minimal memory footprint** even with large resource files
+- **Instant search** with debounced filtering
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Initial release of RESX Lord featuring:
+- Custom RESX file editor with grid interface
+- Multi-language resource file discovery and loading
+- High-performance parsing and rendering
+- Real-time editing and search capabilities
 
 ---
 
-## Following extension guidelines
+## Contributing
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
+We welcome contributions! Please feel free to submit issues and pull requests.
 
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+## License
 
-## Working with Markdown
+This extension follows VS Code's extension guidelines and best practices.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+---
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Enjoy blazing fast RESX management with RESX Lord!** ⚡
