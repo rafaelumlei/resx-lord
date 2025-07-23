@@ -1,6 +1,6 @@
 # RESX Lord
 
-**Blazing fast RESX manager** - A powerful VS Code extension that allow developers manage .NET resource files in an integrated grid view. With its grid-based editor, you can effortlessly view and edit multiple language variants side-by-side, making localization work faster and more efficient than ever.
+**Blazing fast RESX manager** - A powerful VS Code extension that allow developers manage .NET resource files in an integrated grid view. You can effortlessly view and edit multiple language variants side-by-side, making localization work faster and more efficient than ever.
 
 ![RESX Lord Grid](./images/big-with-add-clear.png)
 
